@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Grid Test]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="on ie(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.stockAcc.Examples.grid">
+        <methods>
+          <include name="demo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.stockAcc.Examples.grid -->
+    </classes>
+  </test> <!-- on ie(failed) -->
+  <test name="on Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.stockAcc.Examples.grid">
+        <methods>
+          <include name="demo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.stockAcc.Examples.grid -->
+    </classes>
+  </test> <!-- on Firefox(failed) -->
+</suite> <!-- Failed suite [Grid Test] -->
